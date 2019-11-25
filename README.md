@@ -1,5 +1,5 @@
-PMDIGC 2020
-===========
+PM Digital Consulting - 2020
+============================
 
 WordPress child theme of TwentyTwenty.
 
