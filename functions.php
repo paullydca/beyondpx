@@ -20,3 +20,26 @@ function pmdigc_twentytwenty_parent_theme_enqueue_styles() {
 	);
 
 }
+
+/**
+ * Removes the site description from the header
+ * 
+ * @link https://developer.wordpress.org/reference/functions/__return_empty_string/
+ * @since 0.2.0
+ */
+add_filter( 'twentytwenty_site_description', '__return_empty_string' );
+
+/**
+ * Removes the page title from the homepage
+ * 
+ * @since 0.2.0
+ */
+add_filter( 'the_title', 'pmdigc_twentytwenty_singular_title' );
+
+function pmdigc_twentytwenty_singular_title( $title ){
+	if ( is_front_page() && !is_page_template('templates/template-cover.php') ){
+		return '';
+	}
+	
+	return $title;
+}

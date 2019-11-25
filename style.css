@@ -5,5 +5,14 @@ Description:    TwentyTwenty child theme.
 Author:         pmdigitalconsulting
 Author URI:     https://pmdigitalconsulting.com
 Template:       twentytwenty
-Version:        0.1.0
+Version:        0.2.0
 */
+
+@media screen and (min-width: 0px){
+	.home .post-inner {
+		padding-top: 0;
+	}
+	.home.singular .entry-header {
+		padding: 0;
+	}
+}
