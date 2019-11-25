@@ -43,3 +43,10 @@ function pmdigc_twentytwenty_singular_title( $title ){
 	
 	return $title;
 }
+
+/**
+ * Add support for page excerpts
+ * 
+ * @since 0.2.2
+ */
+add_post_type_support( 'page', 'excerpt' );

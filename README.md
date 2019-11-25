@@ -22,3 +22,4 @@ Changelog
 - Initial commit using [WP-CLI scaffold child-theme](https://developer.wordpress.org/cli/commands/scaffold/child-theme/)
 - Adds screenshot and readme
 - Removes the site description from the header and page title from homepage
+- Adds support for page excerpts
