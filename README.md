@@ -15,6 +15,13 @@ Requirements
 ------------
 - WordPress 5.3+
 
+Documentation
+-------------
+
+### Colors
+- med_blue: #007db1
+- dark_blue: #005a80
+
 Changelog
 ---------
 

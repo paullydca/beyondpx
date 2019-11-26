@@ -50,3 +50,24 @@ function pmdigc_twentytwenty_singular_title( $title ){
  * @since 0.2.2
  */
 add_post_type_support( 'page', 'excerpt' );
+
+
+/**
+ * Display the site title even when custom logo is set
+ * 
+ * @since 0.2.3
+ */
+add_filter( 'twentytwenty_site_logo_args', 'pmdigc_twentytwenty_site_logo_args' );
+
+function pmdigc_twentytwenty_site_logo_args( $args ){
+	// Create a title link
+	$args['title'] = '<a href="%1$s" class="custom-logo-title-link">%2$s</a>';
+	$site_title = get_bloginfo( 'name' );
+	$title_link = sprintf( $args['title'], esc_url( get_home_url( null, '/' ) ), esc_html( $site_title ) );
+	
+	// Add title after the logo link
+	$args['logo'] = '%1$s' . $title_link;
+	$args['logo_class'] = 'site-logo site-title';
+	
+	return $args;
+}

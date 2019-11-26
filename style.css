@@ -5,7 +5,7 @@ Description:    TwentyTwenty child theme.
 Author:         pmdigitalconsulting
 Author URI:     https://pmdigitalconsulting.com
 Template:       twentytwenty
-Version:        0.2.2
+Version:        0.3.0
 */
 
 @media screen and (min-width: 0px){
@@ -14,5 +14,25 @@ Version:        0.2.2
 	}
 	.home.singular .entry-header {
 		padding: 0;
+	}
+}
+
+.site-logo.site-title {
+	display: flex;
+}
+.site-logo.site-title img {
+	max-height: 3.8rem;
+}
+.site-logo.site-title .custom-logo-title-link {
+	line-height: 3.8rem;
+	padding-left: 0.4rem;
+	color: #005a80;
+}
+@media screen and (min-width: 700px){
+	.site-logo.site-title img {
+		max-height: 4.5rem;
+	}
+	.site-logo.site-title .custom-logo-title-link {
+		line-height: 4.5rem;
 	}
 }
