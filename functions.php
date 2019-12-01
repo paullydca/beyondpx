@@ -1,18 +1,22 @@
 <?php
-/**
- * PMDIGC 2020 Theme functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package pmdigc-twentytwenty
- */
+/*
+ Theme Name:   Beyond the Pixel
+ Theme URI:    https://beyondthepx.com
+ Description:  A child theme of Twenty Twenty WordPress theme.
+ Author:       Elicus Technologies
+ Author URI:   https://elicus.com
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
 
-add_action( 'wp_enqueue_scripts', 'pmdigc_twentytwenty_parent_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'twentytwenty_parent_theme_enqueue_styles' );
 
 /**
  * Enqueue scripts and styles.
  */
-function pmdigc_twentytwenty_parent_theme_enqueue_styles() {
+function twentytwenty_parent_theme_enqueue_styles() {
 	wp_enqueue_style( 'twentytwenty-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'pmdigc-twentytwenty-style',
 		get_stylesheet_directory_uri() . '/style.css',
