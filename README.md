@@ -4,10 +4,10 @@ PM Digital Consulting - 2020
 WordPress child theme of TwentyTwenty.
 
 ```
-Theme URI:      https://pmdigitalconsulting
-Description:    TwentyTwenty child theme.
-Author:         pmdigitalconsulting
-Author URI:     https://pmdigitalconsulting.com
+Theme URI:      https://beyondthepx.com
+Description:    BeyondthePX
+Author:         Beyond the Pixel
+Author URI:     https://beyondthepx.com
 Template:       twentytwenty
 ```
 
