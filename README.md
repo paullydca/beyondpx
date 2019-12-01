@@ -1,4 +1,4 @@
-PM Digital Consulting - 2020
+Beyond The Pixel
 ============================
 
 WordPress child theme of TwentyTwenty.
